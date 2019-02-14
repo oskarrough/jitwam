@@ -8,7 +8,7 @@
 @font-face {
 
   font-family: bodoni;
-  src: url('webfont/apercu-regular-webfont.ttf');
+  src: url('webfont/apercu-bold-webfont.ttf');
   color:white;
 
 }
@@ -20,109 +20,71 @@ html, body {
   
   margin:0;
 
-}
-
-h1 {
-
-  font-size:1.5em;
+  scroll-behavior: smooth;
 
 }
 
 /* set the webpage background as a grid of pictures */
 
-
-.Background {
+.PromoGrid {
 
   display: grid;
-  grid-template-columns: 100vw;
+  height:180vh;
+  grid-template-columns: 100%;
+  grid-template-rows: 24% 30% 22% 4% 20%;
 
 }
 
-.Background-picture {
+.PromoGrid-picture {
 
   width:100%;
   opacity:1;
-  
+
 }
 
-.Background-picture.flex {
+.PromoGrid-downloadText {
 
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
+  background:#CCCCCD;
+
+  flex-basis: 90%;
+
+  width:100%;
+  height:230%;
+
+  font-size:1.7rem;
+
+  color:black;
+
   text-align: center;
-
-  max-height:60vh;
-
-}
-
-.Background-picture-portrait {
-
-  margin:0;
-  padding:0;
-  flex-basis: 80%;
-}
-
-.Background-picture-downloadMessage {
-
-  background:black;
-  margin:0;
-
-}
-
-.Background-picture-downloadMessage {
-
-  color:white;
-  font-size:1em;
-  flex-basis: 20%;
-  padding:0.6em 1em;
-
-}
-
-
-.TextBox {
-
-  position: absolute;
-  bottom:11em;
-  left:1.5em;
-  right:1.5em;
-
-  opacity:0.8;
-
-  max-width: 80%;
 
   cursor: pointer;
 
-  padding:0.4em;
+  padding-top:0.8em;
 
-  text-align: center;
+  color:black;
+  transition: color 0.5s ease-in-out; 
 
-  background:black;
+  margin: 0;
+  
+}
 
-  color:white;
-  transition: color 0.5s ease-in-out;
+.PromoGrid-downloadButton {
+
+  position: relative;
+
+  width:3em;
+  height:3em;
+
+  margin:2em 8em;
 
 }
 
-.TextBox:hover {
+.PromoGrid-picture:nth-of-type(3) {
+  
+  /* make more space between download message and last picture */
 
-  color: #AEAEAE;
+  /* margin-top:-1.5em; */
+  margin-top:-12.5em;
 
-}
-
-.TextBoxes-text2 {
-
-/* only change vertical alignement */
-
-  bottom:-13.5em;
 
 }
-
-.TextBoxes-text3 {
-
-/* only change vertical alignement */
-
-bottom:-26.5em;
-
-}
-
