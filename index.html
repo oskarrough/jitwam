@@ -6,30 +6,39 @@
 
     <title> Jitwam  </title>
     <link rel="stylesheet" type="text/css" href="styling.css" />
+    <link href="custom_elements/video-placeholder.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
 
   </head>
 
   <body>
 
-    <div class="hello"></div>
+    <div class="PromoContainer">
 
-    <div class="PromoGrid">
-
-      <img class="PromoGrid-picture" src="assets/jitwam-honeycomb-cover-front-ld.jpg" alt="broken">
-      <img class="PromoGrid-picture" src="assets/jitwam-honeycomb-cover-back-sd.jpg" alt="broken">
-      <iframe src="https://www.youtube.com/embed/Mh1Ilsd7cI4" frameborder="0"></iframe>
-      <span class="PromoGrid-downloadText"> Download the album </span>
-      <a href="https://www.google.com"> <img class="PromoGrid-downloadButton" src="assets/download_button.svg" alt="broken"></a>
-      <img class="PromoGrid-picture" src="assets/Jitwam_HONEYCOMB_Mockup_Complete_Back.jpg" alt="broken">
+      <img class="PromoContainer-picture" src="assets/jitwam-honeycomb-cover-front-ld.jpg" alt="broken">
+      <video-placeholder>
+        <button is="video-placeholder-front">
+          <img class="VideoPlaceholer-placeholder" src="assets/jitwam-honeycomb-cover-back_ld.jpg">
+        </button>
+        <template>
+          <iframe class="videoPlaceholer-video" src="https://www.youtube.com/embed/Mh1Ilsd7cI4"></iframe>
+        </template>
+      </video-placeholder>
+      <div class="PromoContainer-download">
+          <div class="PromoContainer-download-text"> Download the album </div>
+          <a href="https://www.google.com"> <img class="PromoContainer-download-button" src="assets/download_button.svg" alt="broken"></a>
+        </div>
+      
+      <img class="PromoContainer-picture" src="assets/Jitwam_HONEYCOMB_Mockup_Complete_Back.jpg" alt="broken">
+      <img class="PromoContainer-picture" src="assets/jitwam-honeycomb-cover-back-sd.jpg" alt="broken">
 
     </div>
 
-        <!-- <iframe class="PromoRelease-content-video"  src="https://www.youtube.com/embed/TH046GJFnS4" frameborder="0" allowfullscreen></iframe> -->
-
     <script src="https://unpkg.com/hyperhtml@latest/min.js"></script>
+    <script src="custom_elements/video-placeholder.js"></script>
     <script src="main.js"></script>
     
   </body>
 
 </html>
+
