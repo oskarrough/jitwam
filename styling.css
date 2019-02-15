@@ -1,0 +1,119 @@
+* {
+
+  box-sizing: border-box;
+  font-family: 'Bodoni';
+
+}
+
+@font-face {
+
+  font-family: bodoni;
+  src: url('webfont/apercu-bold-webfont.ttf');
+  color:white;
+
+}
+
+html, body {
+
+  width:100vw;
+  height:100vh;
+  
+  margin:0;
+
+  scroll-behavior: smooth;
+
+  background:#CCCCCD;
+
+}
+
+/* set the webpage background as a grid of pictures */
+
+.PromoContainer {
+
+  height:250vh;
+
+}
+
+.PromoContainer-picture {
+
+  width:100%;
+  opacity:1;
+
+  flex-basis: 40%;
+
+  margin-bottom:0;
+
+}
+
+.PromoContainer-picture:nth-of-type(1) {
+
+  margin-bottom: -0.3em;
+
+}
+
+.VideoPlaceholer-icon {
+
+  background: url("play.svg");
+
+}
+
+
+.VideoPlaceholer-placeholder {
+
+  height: 100%;
+
+}
+
+video-placeholder,
+.VideoPlaceholer-video {
+
+  height:55vh;
+
+}
+
+.PromoContainer-download {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background:#CCCCCD;
+
+  height:8em;
+
+  border-top:-1em;
+
+}
+
+
+.PromoContainer-download-text {
+
+  width:100%;
+  height:230%;
+
+  font-size:1.7rem;
+
+  cursor: pointer;
+
+  /* padding-top:0.8em; */
+
+  color:black;
+  transition: color 0.5s ease-in-out; 
+
+  /* margin: 0; */
+
+
+  margin-top:25%;
+  
+} 
+
+.PromoContainer-download-button {
+
+  width:40%;
+  height:40%;
+
+  margin-top:0.5em;
+
+  /* margin:2em 8em; */
+
+}
