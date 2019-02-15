@@ -11,13 +11,13 @@ video-placeholder {
 }
 
 /* Ratio trick to ensure a fixed aspect ratio */
-video-placeholder::after {
+/* video-placeholder::after {
   display: block;
   content: '';
   height: 0;
   padding-top: 56.25%;
   padding-top: calc(9 / 16 * 100%);
-}
+} */
 
 video-placeholder > * {
   position: absolute;

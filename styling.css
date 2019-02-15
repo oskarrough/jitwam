@@ -1,15 +1,16 @@
-* {
+@font-face {
 
-  box-sizing: border-box;
-  font-family: 'Bodoni';
+  font-family: "Bodoni bold";
+  src: url("bodoni_bold.otf") format("opentype");
+  font-weight:normal;
+  font-style:normal;
 
 }
 
-@font-face {
+html {
 
-  font-family: bodoni;
-  src: url('webfont/apercu-bold-webfont.ttf');
-  color:white;
+  box-sizing: border-box;
+  /* font-family: "Bodoni bold"; */
 
 }
 
@@ -30,90 +31,156 @@ html, body {
 
 .PromoContainer {
 
-  height:250vh;
+
+  scroll-snap-type: y proximity;
 
 }
 
 .PromoContainer-picture {
 
-  width:100%;
-  opacity:1;
-
-  flex-basis: 40%;
+  width: 100vw;
+  /* width:100%; */
 
   margin-bottom:0;
 
-}
+  scroll-snap-align: center;
 
-.PromoContainer-picture:nth-of-type(1) {
+  vertical-align: bottom;
 
-  margin-bottom: -0.3em;
-
-}
-
-.VideoPlaceholer-icon {
-
-  background: url("play.svg");
+  object-fit: cover;
 
 }
 
+.PromoContainer-picture:nth-of-type(2) {
 
-.VideoPlaceholer-placeholder {
+  /* border:2px solid red; */
 
-  height: 100%;
+}
+
+video-placeholder {
+
+  scroll-snap-align: center;
+
+}
+
+.VideoPlaceholder-button-playIcon {
+
+  position: relative;
+  top:35%;
+
+  width:30%;
+  height: 30%;
+
+  filter: invert(50%); /* will pass from black to grey */
+
+  transition: all 0.2s ease-in-out; /* scale and filter */
+  
+
+}
+
+.VideoPlaceholder-button-playIcon:hover {
+
+
+  transform: scale(1.2);
+  transform: rotate(360deg);
+  filter: invert(1%);
+
+}
+
+
+.VideoPlaceholder-button-placeholder {
+
+  margin-top:-11em;
+
+  width: 100vw;
 
 }
 
 video-placeholder,
-.VideoPlaceholer-video {
+.VideoPlaceholder-video {
 
   height:55vh;
 
-}
+} 
 
-.PromoContainer-download {
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  background:#CCCCCD;
-
-  height:8em;
-
-  border-top:-1em;
-
-}
-
-
-.PromoContainer-download-text {
+.PromoContainer-downloadText {
 
   width:100%;
-  height:230%;
+  height:50%;
 
-  font-size:1.7rem;
+  font-family: "Bodoni bold";
+
+  font-size:2.1rem;
 
   cursor: pointer;
 
-  /* padding-top:0.8em; */
-
+  text-align: center;
+  
+  /* color: #7E7E7E; */
   color:black;
-  transition: color 0.5s ease-in-out; 
 
-  /* margin: 0; */
-
-
-  margin-top:25%;
   
 } 
 
-.PromoContainer-download-button {
+.PromoContainer-downloadButtonContainer {
 
-  width:40%;
-  height:40%;
+  display: flex;
+  justify-content: center;
 
-  margin-top:0.5em;
+}
 
-  /* margin:2em 8em; */
+a { /* download button parent */
+
+  width:100%;
+  flex-basis:20%;
+
+}
+
+
+.PromoContainer-downloadButtonContainer-button {
+
+  width:100%;
+  height:100%;
+
+  vertical-align: bottom;
+
+  animation: pulsate 7s ease-in-out;
+  animation-iteration-count: infinite;
+
+}
+
+/* functions */
+
+@keyframes pulsate {
+
+  0% {
+
+    opacity:0;
+
+  }
+
+  25% {
+
+    opacity: 0.50;
+
+  }
+
+  50% {
+    
+    opacity:0.1;
+
+  }
+
+  75% {
+    
+    opacity:0.50;
+
+  }
+
+  100% {
+    
+    opacity:0;
+
+  }
 
 }
