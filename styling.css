@@ -94,6 +94,8 @@ html, body {
 
   filter: invert(100%);
 
+  cursor: pointer;
+
   transition: all 0.2s ease-in-out; /* scale and filter */
   
 }
