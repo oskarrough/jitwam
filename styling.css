@@ -156,9 +156,19 @@ html, body {
 .SocialIcons {
 
   width: 100vw;
-  height: 5vh;
+  height: 10vh;
 
-  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:#CCCCCD;
+
+}
+
+.SocialIcons-icon:nth-of-type(1) {
+
+  fill:black;
 
 }
 
