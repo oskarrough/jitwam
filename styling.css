@@ -54,6 +54,8 @@ html, body {
 
   vertical-align: bottom;
 
+  cursor: pointer;
+
 }
 
 .VideoPlaceholder {
@@ -122,11 +124,9 @@ html, body {
 
   font-family: "Bodoni bold";
 
-  font-size:1.8rem;
+  font-size:1.5em;
 
   padding:0.1em;
-
-  cursor: pointer;
 
   text-align: center;
   
@@ -140,25 +140,19 @@ html, body {
   justify-content: center;
 
 }
-
-a { /* download button parent */
-
-  width:100%;
-  flex-basis:20%;
-  text-decoration: none;
-
-}
-
-
 .PromoContainer-downloadButtonContainer-button {
 
   width:100%;
   height:100%;
 
+  flex-basis:20%;
+
   vertical-align: bottom;
 
-  animation: pulsate 7s ease-in-out;
-  animation-iteration-count: infinite;
+
+
+  /* animation: pulsate 7s ease-in-out;
+  animation-iteration-count: infinite; */
 
 }
 
