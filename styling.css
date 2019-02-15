@@ -65,11 +65,16 @@ video-placeholder {
 
 .VideoPlaceholder-button-playIcon {
 
-  position: relative;
-  top:35%;
+  position: absolute;
+  top:auto;
+  bottom:auto; 
+  left:11em;
+  right:11em;
 
-  width:30%;
-  height: 30%;
+  width:10em;
+  height:10em;
+
+
 
   filter: invert(50%); /* will pass from black to grey */
 
@@ -146,6 +151,15 @@ a { /* download button parent */
 
   animation: pulsate 7s ease-in-out;
   animation-iteration-count: infinite;
+
+}
+
+.SocialIcons {
+
+  width: 100vw;
+  height: 8vh;
+
+  background: black;
 
 }
 
