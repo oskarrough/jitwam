@@ -23,7 +23,8 @@ html, body {
 
   scroll-behavior: smooth;
 
-  background:#CCCCCD;
+  /* background:#CCCCCD; */
+  background: #D6D6D8;
 
 }
 
@@ -133,6 +134,8 @@ html, body {
   text-align: center;
   
   color:black;
+
+  background: #CCCCCE;
   
 } 
 
@@ -140,6 +143,8 @@ html, body {
 
   display: flex;
   justify-content: center;
+
+  background: #CCCCCE;
 
 }
 .PromoContainer-downloadButtonContainer-button {
