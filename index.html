@@ -4,7 +4,7 @@
 
   <head>
 
-    <title> Jitwam  </title>
+    <title>Jitwam</title>
     <link rel="stylesheet" type="text/css" href="styling.css" />
     <link href="custom_elements/video-placeholder.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
@@ -16,21 +16,26 @@
     <div class="PromoContainer">
 
       <img class="PromoContainer-picture" src="assets/jitwam-honeycomb-cover-front-ld.jpg" alt="broken">
-      <video-placeholder class="VideoPlaceholer">
-        <button class="VideoPlaceholer-icon" is="video-placeholder-front">
-          <img class="VideoPlaceholer-placeholder" src="assets/jitwam-honeycomb-cover-back_ld.jpg">
+      <video-placeholder class="VideoPlaceholder">
+        <button class="VideoPlaceholder-button" is="video-placeholder-front">
+            <img class="VideoPlaceholder-playButton" src="play_button.png" alt="broken">
+          <img class="VideoPlaceholder-button-placeholder" src="assets/jitwam-honeycomb-cover-back_ld.jpg">
         </button>
         <template>
-          <iframe class="videoPlaceholer-video" src="https://www.youtube.com/embed/Mh1Ilsd7cI4"></iframe>
+          <iframe class="VideoPlaceholder-video" src="https://www.youtube.com/embed/Mh1Ilsd7cI4"></iframe>
         </template>
       </video-placeholder>
-      <div class="PromoContainer-download">
-          <div class="PromoContainer-download-text"> Download the album </div>
-          <a href="https://www.google.com"> <img class="PromoContainer-download-button" src="assets/download_button.svg" alt="broken"></a>
-        </div>
-      
-      <img class="PromoContainer-picture" src="assets/Jitwam_HONEYCOMB_Mockup_Complete_Back.jpg" alt="broken">
-      <img class="PromoContainer-picture" src="assets/jitwam-honeycomb-cover-back-sd.jpg" alt="broken">
+      <div class="PromoContainer-downloadText"> Hit the vinyl to preorder the album </div>
+      <div class="PromoContainer-downloadButtonContainer">
+        <img class="PromoContainer-downloadButtonContainer-button" src="assets/download_button.svg" alt="broken">
+      </div>
+      <a href="https://www.google.com"><img class="PromoContainer-picture" src="assets/Jitwam_HONEYCOMB_Mockup_Complete_Back.jpg" alt="broken"></a>
+      <div class="SocialIcons">
+        <a class="SocialIcons-link" href="http://tartelet-records.com/"> <img class="SocialIcons-icon" src="assets/tartelet-records-logo.svg" alt="broken"> </a>
+        <a class="SocialIcons-link" href="https://soundcloud.com/jitwam"> <img class="SocialIcons-icon" src="assets/facebook_icon.svg" alt="broken"> </a>
+        <a class="SocialIcons-link" href="https://fr-fr.facebook.com/jitwam/"> <img class="SocialIcons-icon" src="assets/soundcloud_icon.svg" alt="broken"> </a>
+
+      </div>
 
     </div>
 
