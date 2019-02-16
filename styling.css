@@ -23,7 +23,8 @@ html, body {
 
   scroll-behavior: smooth;
 
-  background:#CCCCCD;
+  /* background:#CCCCCD; */
+  background: #D6D6D8;
 
 }
 
@@ -133,6 +134,8 @@ html, body {
   text-align: center;
   
   color:black;
+
+  background: #CCCCCE;
   
 } 
 
@@ -140,6 +143,8 @@ html, body {
 
   display: flex;
   justify-content: center;
+
+  background: #CCCCCE;
 
 }
 .PromoContainer-downloadButtonContainer-button {
@@ -162,17 +167,19 @@ html, body {
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 
-  background:#CCCCCD;
+  background:  	#D6D6D8;
+}
+
+.SocialIcons-link > svg {
+
+  width:4.6em;
+  height:4.6em;
+  margin-top:0.6em;
 
 }
 
-.SocialIcons-icon:nth-of-type(1) {
-
-  fill:black;
-
-}
 
 /* functions */
 
