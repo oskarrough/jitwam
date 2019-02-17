@@ -14,6 +14,7 @@ html {
 
 }
 
+
 html, body {
 
   width:100vw;
@@ -30,38 +31,40 @@ html, body {
 
 /* set the webpage background as a grid of pictures */
 
-.PromoContainer {
+.GridContent {
 
 
-  scroll-snap-type: y proximity;
+  display: grid;
 
-}
-
-.PromoContainer-picture {
-
-  width: 100vw;
-
-  margin-bottom:0;
-
-  scroll-snap-align: center;
-
-  vertical-align: bottom;
-
-  object-fit: cover;
+  grid-template-columns: repeat(1, 1fr);
 
 }
 
-.PromoContainer-picture:nth-of-type(2) {
 
-  vertical-align: bottom;
+
+.GridContent-item-img {
+
+
+  width:100%;
+  height:100%;
+
+  object-fit-cover;
+
+}
+
+.GridContent-item {
+
+
+
+}
+
+.DownloadBlock-img {
 
   cursor: pointer;
 
 }
 
-.VideoPlaceholder {
-
-  scroll-snap-align: center;
+.VideoBlock-videoElement {
 
   display: flex;
   flex-direction: column;
@@ -71,7 +74,7 @@ html, body {
 
 }
 
-.VideoPlaceholder-button  {
+.VideoBlock-videoElement-button  {
 
   flex-basis: 50%;
 
@@ -85,7 +88,7 @@ html, body {
 
 }
 
-.VideoPlaceholder-playButton {
+.VideoBlock-videoElement-button-img {
 
   width: 100vw;
   height: 25vh;
@@ -101,7 +104,7 @@ html, body {
   
 }
 
-.VideoPlaceholder-playButton:hover {
+.VideoBlock-videoElement-button-img:hover {
 
 
   transform: scale(1.2);
@@ -112,7 +115,7 @@ html, body {
 }
 
 
-.VideoPlaceholder-button-placeholder {
+.VideoBlock-videoElement-button-placeholder {
 
   flex-basis: 50%;
 
@@ -120,7 +123,15 @@ html, body {
 
 }
 
-.PromoContainer-downloadText {
+.DownloadBlock {
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.DownloadBlock-downloadText {
 
   width:99%;
   height:50%;
@@ -136,31 +147,43 @@ html, body {
   color:black;
 
   background: #CCCCCE;
+
+  flex-basis: 10%;
+
+  flex-shrink: 0;
+
   
 } 
 
-.PromoContainer-downloadButtonContainer {
+.DownloadBlock-downloadButtonContainer {
 
   display: flex;
   justify-content: center;
 
   background: #CCCCCE;
 
+  flex-basis: 30%;
+  flex-shrink: 1; 
+
+
+
 }
-.PromoContainer-downloadButtonContainer-button {
+
+.DownloadBlock-downloadButtonContainer-img {
 
   width:100%;
   height:100%;
 
-  flex-basis:20%;
-
   vertical-align: bottom;
 
-  margin: 1em auto;
+  margin: auto auto;
+
+  flex-basis: 30%;
+  flex-shrink: 1; 
 
 }
 
-.SocialIcons {
+.SocialBlock {
 
   width: 100vw;
   height: 10vh;
@@ -172,7 +195,7 @@ html, body {
   background:  	#D6D6D8;
 }
 
-.SocialIcons-link > svg {
+.SocialBlock-link-tarteletSVG {
 
   width:4.6em;
   height:4.6em;
