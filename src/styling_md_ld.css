@@ -1,3 +1,4 @@
+/* medium device */
 @media (min-width:578px) {
 
 
@@ -26,8 +27,130 @@
 
 }
 
-/* @media (min-width:884px) {
+/* large device */
+@media (min-width:884px) {
 
 
+  .GridContent {
 
-} */
+    grid-template-columns: repeat(6, 17vw);
+    grid-template-rows: repeat(9, 11vw);
+
+    /* grid-gap: 0.2rem; */
+
+    /* border:2px solid blue; */
+
+  }
+
+
+  .CoverBlock {
+
+    /* vertical-align: top; */
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    grid-row-start:1;
+    grid-row-end:6;
+
+    /* border:2px solid yellow; */
+
+  }
+
+  .CoverBlock > img {
+
+    /* as cover cuts the title, better using fill */
+
+    object-fit: fill; 
+    
+  }
+
+
+  .VideoBlock {
+
+    grid-column-start: 4;
+    grid-column-end: 7;
+
+    grid-row-start:2;
+    grid-row-end:6;
+    
+  }
+
+  .VideoBlock-videoElement {
+
+    height:100%;
+    
+  }
+
+
+  .VideoBlock-videoElement-button {
+
+    height: 50%;
+
+    transition: background 0.2s ease-in-out;
+
+  }
+
+  .VideoBlock-videoElement-button-img {
+
+    height:100%;
+    width: 40%;
+  }
+
+  /* switch placeholder image */
+  .VideoBlock-videoElement-button-placeholder:nth-of-type(2) {
+
+    display: none;
+
+  }
+
+  .VideoBlock-videoElement-button-placeholder:nth-of-type(1) {
+
+    display:block;
+
+  }
+  
+  .DownloadBlock {
+
+    grid-column-start: 3;
+    grid-column-end: 7;
+
+    grid-row-start: 6;
+    grid-row-end: 11;
+
+    /* border:2px solid blue; */
+
+    height: 100%;
+
+  }
+
+  .DownloadBlock-downloadText {
+
+    font-size:2.2rem;
+
+  }
+  
+  .DownloadBlock-img {
+
+    /* border:2px solid red; */
+    height:95%;
+
+    object-fit: fill;
+
+  }
+
+
+  .SocialBlock {
+
+    grid-column-start: 4;
+    grid-column-end: 7;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    background:#CCCCCE;
+
+
+  }
+
+}
