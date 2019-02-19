@@ -1,0 +1,33 @@
+@media (min-width:578px) {
+
+
+  /* makes arrow flex item smaller */
+  .DownloadBlock-downloadButtonContainer-img {
+
+    flex-basis: 20%;
+  }
+
+  /* increase font-size as initial one too small for md and ld devices */
+  .DownloadBlock-downloadText  {
+
+    font-size:3rem;
+
+  }
+
+  /* the two following make fb and soundcloud logs bigger */
+  
+  .SocialBlock-img,
+  .SocialBlock-link-tarteletSVG {
+
+    padding:0;
+    margin:0;
+
+  }
+
+}
+
+/* @media (min-width:884px) {
+
+
+
+} */

@@ -22,9 +22,6 @@ html, body {
   
   margin:0;
 
-  scroll-behavior: smooth;
-
-  /* background:#CCCCCD; */
   background: #D6D6D8;
 
 }
@@ -33,36 +30,29 @@ html, body {
 
 .GridContent {
 
-
   display: grid;
-
   grid-template-columns: repeat(1, 1fr);
-
-}
-
-
-
-.GridContent-item-img {
-
-
-  width:100%;
-  height:100%;
-
-  object-fit-cover;
 
 }
 
 .GridContent-item {
 
+  vertical-align:bottom;
+  margin:0;
 
+}
+
+.GridContent-item-img {
+
+  width:100%;
+  height:100%;
+  object-fit:cover;
+
+  vertical-align: bottom;
 
 }
 
-.DownloadBlock-img {
-
-  cursor: pointer;
-
-}
+/* block 2/4 > no block 1/4 */
 
 .VideoBlock-videoElement {
 
@@ -123,6 +113,8 @@ html, body {
 
 }
 
+/* block 3/4 */
+
 .DownloadBlock {
 
   display: flex;
@@ -138,7 +130,7 @@ html, body {
 
   font-family: "Bodoni bold";
 
-  font-size:1.5em;
+  font-size:2em;
 
   padding:0.1em;
 
@@ -149,7 +141,6 @@ html, body {
   background: #CCCCCE;
 
   flex-basis: 10%;
-
   flex-shrink: 0;
 
   
@@ -164,8 +155,6 @@ html, body {
 
   flex-basis: 30%;
   flex-shrink: 1; 
-
-
 
 }
 
@@ -183,6 +172,14 @@ html, body {
 
 }
 
+.DownloadBlock-img {
+
+  cursor: pointer;
+
+}
+
+/* block 4/4 */
+
 .SocialBlock {
 
   width: 100vw;
@@ -192,7 +189,8 @@ html, body {
   align-items: center;
   justify-content: space-evenly;
 
-  background:  	#D6D6D8;
+  background:#D6D6D8;
+
 }
 
 .SocialBlock-link-tarteletSVG {
@@ -200,42 +198,5 @@ html, body {
   width:4.6em;
   height:4.6em;
   margin-top:0.6em;
-
-}
-
-
-/* functions */
-
-@keyframes pulsate {
-
-  0% {
-
-    opacity:0;
-
-  }
-
-  25% {
-
-    opacity: 0.50;
-
-  }
-
-  50% {
-    
-    opacity:0.1;
-
-  }
-
-  75% {
-    
-    opacity:0.50;
-
-  }
-
-  100% {
-    
-    opacity:0;
-
-  }
 
 }
