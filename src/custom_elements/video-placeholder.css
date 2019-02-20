@@ -7,7 +7,7 @@ video-placeholder {
   /* Hide overflowing child media */
   overflow: hidden;
   /* Black fades better with video embeds */
-  background-color: #000;
+  /* background-color: #000; */
 }
 
 /* Ratio trick to ensure a fixed aspect ratio */
