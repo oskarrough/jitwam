@@ -7,11 +7,10 @@
 
 }
 
-html {
-
+*,
+*::after,
+*::before {
   box-sizing: border-box;
-  /* font-family: "Bodoni bold"; */
-
 }
 
 html, body {
