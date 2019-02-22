@@ -14,21 +14,24 @@ html {
 
 }
 
-
 html, body {
 
   width:100vw;
   height:100vh;
   
   margin:0;
+  /* background: #D6D6D8; */
 
-  background: #D6D6D8;
+  background: #CCCCCE;
 
 }
 
 /* set the webpage background as a grid of pictures */
 
 .GridContent {
+
+  width:100%;
+  height: 100%;
 
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -40,27 +43,28 @@ html, body {
   vertical-align:bottom;
   margin:0;
 
+  width:100%;
+  height: 100%;
+
+
 }
 
 .GridContent-item-img {
 
   width:100%;
   height:100%;
-  object-fit:cover;
 
   vertical-align: bottom;
 
 }
 
-/* block 2/4 > no block 1/4 */
-
+/* block 2/5 > no styling for CoverBlock 1/4 */
 .VideoBlock-videoElement {
 
   display: flex;
   flex-direction: column;
 
-  height: 70vh;
-
+  height: 60vh;
 
 }
 
@@ -73,8 +77,14 @@ html, body {
   display:flex;
   flex-direction: column;
 
-  background-color:#CCCCCD;
-  transition: background-color 0.2s ease-in-out;
+  background:#CCCCCD;
+  transition: background 0.2s ease-in-out;
+
+}
+
+.VideoBlock-videoElement-button:hover {
+
+  background:black;
 
 }
 
@@ -94,8 +104,9 @@ html, body {
   
 }
 
-.VideoBlock-videoElement-button-img:hover {
 
+
+.VideoBlock-videoElement-button:hover > img {
 
   transform: scale(1.2);
   transform: rotate(360deg);
@@ -105,7 +116,9 @@ html, body {
 }
 
 
-.VideoBlock-videoElement-button-placeholder {
+
+.VideoBlock-videoElement-button-placeholder1 {
+
 
   flex-basis: 50%;
 
@@ -113,20 +126,32 @@ html, body {
 
 }
 
-/* block 3/4 */
+.VideoBlock-videoElement-button-placeholder2 {
+
+  /* placeholder for ld version */
+  display: none;
+
+}
+
+/* block 3/5 */
 
 .DownloadBlock {
 
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
 
+  align-items: center;
+
+  /* background: #D6D6D8; */
+  background: #CCCCCE;
+
+  margin-bottom:-2.2em;
 }
 
 
 .DownloadBlock-downloadText {
 
   width:99%;
-  height:50%;
 
   font-family: "Bodoni bold";
 
@@ -140,21 +165,23 @@ html, body {
 
   background: #CCCCCE;
 
-  flex-basis: 10%;
-  flex-shrink: 0;
+  /* flex-basis: 10%;
+  flex-shrink: 0; */
 
   
 } 
 
 .DownloadBlock-downloadButtonContainer {
 
-  display: flex;
+  /* display: flex; */
   justify-content: center;
 
   background: #CCCCCE;
 
-  flex-basis: 30%;
-  flex-shrink: 1; 
+  height:15%;
+  
+  margin-bottom:0.3em;
+
 
 }
 
@@ -165,38 +192,69 @@ html, body {
 
   vertical-align: bottom;
 
-  margin: auto auto;
-
-  flex-basis: 30%;
-  flex-shrink: 1; 
+  margin-top:0em;
 
 }
-
 .DownloadBlock-img {
 
   cursor: pointer;
 
+  width:100%;
+  /* height: 80%; */
+
+  object-fit: cover;
+
+  /* border:2px solid green; */
+
 }
 
-/* block 4/4 */
+/* block 4/5 */
 
 .SocialBlock {
 
-  width: 100vw;
-  height: 10vh;
-
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-evenly;
 
-  background:#D6D6D8;
+  /* background:#D6D6D8; */
+  background: #CCCCCE;
+
+  /* border:2px solid red; */
+
+  height: auto;
+
+}
+
+.SocialBlock > * {
 
 }
 
 .SocialBlock-link-tarteletSVG {
 
-  width:4.6em;
-  height:4.6em;
-  margin-top:0.6em;
+  width:3.8em;
+  height:3.8em;
+
+
+}
+
+.SoundcloudIcon {
+
+  width: 3.6rem;
+  height:3.6rem;
+
+}
+
+.FacebookIcon {
+
+  width: 4rem;
+  height:4rem;
+
+}
+
+/* block 5/5 */
+
+.TrackListBlock {
+
+  display: none;
 
 }

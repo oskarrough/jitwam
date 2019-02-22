@@ -1,4 +1,7 @@
-@media (min-width:578px) {
+/* medium device */
+@media only screen 
+and (min-width:578px)
+and (max-width:883px) {
 
 
   /* makes arrow flex item smaller */
@@ -26,8 +29,180 @@
 
 }
 
-/* @media (min-width:884px) {
+/* large device */
+@media (min-width:884px) {
 
 
+  .GridContent {
 
-} */
+    grid-template-columns: repeat(6, 17vw);
+    grid-template-rows: repeat(9, 11vw);
+
+    margin:0;
+    padding:0;
+
+  }
+
+
+  .CoverBlock {
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    grid-row-start:1;
+    grid-row-end:6;
+
+    /* border:2px solid yellow; */
+
+  }
+
+  .CoverBlock > img {
+
+    /* as cover cuts the title, better using fill */
+
+    object-fit: fill; 
+    
+  }
+
+
+  .VideoBlock {
+
+    grid-column-start: 4;
+    grid-column-end: 7;
+
+    grid-row-start:2;
+    grid-row-end:6;
+    
+  }
+
+  .VideoBlock-videoElement {
+
+    height:100%;
+
+    border:none;
+    
+  }
+
+
+  .VideoBlock-videoElement-button {
+
+    height: 50%;
+
+    transition: background 0.2s ease-in-out;
+
+
+  }
+
+  .VideoBlock-videoElement-button-img {
+
+    height:100%;
+    width: 40%;
+  }
+
+  /* switch placeholder image */
+  .VideoBlock-videoElement-button-placeholder1 {
+
+    display: none;
+
+  }
+
+  .VideoBlock-videoElement-button-placeholder2 {
+
+    display:block;
+
+    height:270%;
+  }
+  
+  .DownloadBlock {
+
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    grid-row-start: 6;
+    grid-row-end: 11;
+
+    /* border:2px solid blue; */
+
+    height: 100%;
+
+  }
+
+  .DownloadBlock-downloadText {
+
+    font-size:2.2rem;
+
+  }
+
+  .DownloadBlock-downloadButtonContainer {
+
+    height:15%;
+
+  }
+  
+  .DownloadBlock-img {
+
+    height:100%;
+    object-fit: fill;
+
+  }
+
+
+  .SocialBlock {
+    grid-column-start: 4;
+    grid-column-end: 7;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    margin-top:1.5em;
+
+    background:#CCCCCE;
+
+  }
+
+  .SocialBlock-link-tarteletSVG {
+
+    width:4.8em;
+    height:4.8em;
+  
+  }
+
+  .FacebookIcon {
+
+    width: 5em;
+    height:5em;
+
+
+  }
+
+  .SoundcloudIcon {
+
+    width: 4.6em;
+    height:4.6em;
+
+
+  }
+
+  .TrackListBlock {
+
+    display: block;
+
+
+    grid-column-start: 5;
+    grid-column-end: 7;
+
+    grid-row-start: 6;
+    grid-row-end: 11; 
+
+  } 
+
+  .GridContent-item-tracklist {
+
+    width:100%;
+    height: 100%;
+
+    object-fit: fill;
+
+  }
+
+}
