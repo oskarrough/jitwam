@@ -107,18 +107,18 @@
 
       const divStyler = styler(el)
 
-      // const t = tween({
-      //   from: 0,
-      //   to: {rotate: 180},
-      //   duration: 70000,
-      //   // ease: easing.backOut,
-      //   flip: Infinity
-      //   // elapsed: 500,
-      //   // loop: 5,
-      //   // yoyo: 5
-      // })
+      const t = tween({
+        from: 0,
+        to: {rotate: 180},
+        duration: 80000,
+        ease: easing.backOut,
+        flip: Infinity
+        // elapsed: 500,
+        // loop: 5,
+        // yoyo: 5
+      })
 
-      // t.start(divStyler.set)
+      t.start(divStyler.set)
 
       const ballXY = value({x: 0, y: 0}, divStyler.set)
 
