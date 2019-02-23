@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'Bodoni bold';
+  src: url('bodoni_bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  background: black;
+  color: white;
+  font-family: Bodoni bold, serif;
+  font-size: calc(10px + 1.2vw);
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+  vertical-align: bottom;
+}
+
+.VideoBlock {
+	width: 95%;
+  margin: 15vh auto 6vh;
+}
+
+@media (min-width: 40em) {
+	.VideoBlock {
+		max-width: 65%;
+	}
+}
+
+.PlayButton {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 2;
+  height: 64px;
+  width: 64px;
+  opacity: 0.6;
+  transition: opacity 200ms;
+}
+
+video-placeholder {
+  background: #222;
+}
+
+[is='video-placeholder-front']:hover {
+  cursor: pointer;
+}
+
+[is='video-placeholder-front']:hover .PlayButton {
+  opacity: 1;
+}
+
+iframe {
+  border: 0;
+}
+
+.BackVinyl {
+  display: block;
+  max-width: 70%;
+  height: auto;
+  margin: 8vh auto;
+}
+
+.Text {
+  margin: 3vh auto;
+  max-width: 30em;
+  opacity: 0.7;
+}
+
+.Spinner {
+  animation: 2s spinner;
+  position: fixed;
+  z-index: 3;
+  top: 2rem;
+  left: 0vw;
+  width: 18vw;
+  height: 18vw;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.PreorderLink {
+  text-decoration: none;
+ 
+  color: #08adf9;
+  padding: 1em;
+  display: inline-block;
+  position: fixed;
+  right: 1rem;
+  top: 15vh;
+  text-align: center;
+	font-size: 2em;
+  /* writing-mode: vertical-rl;
+	text-orientation: mixed; */
+	z-index: 2;
+}
