@@ -1,84 +1,104 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html>
-
   <head>
-    <title>Jitwam</title>
-    <link rel="stylesheet" type="text/css" href="styling_sd.css" />
-    <link rel="stylesheet" type="text/css" href="styling_md_ld.css" />
-    <link href="custom_elements/video-placeholder.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+    <title>Jitwam - Honeycomb</title>
+    <!-- <link rel="stylesheet" type="text/css" href="styling_sd.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="styling_md_ld.css" /> -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/gh/oskarrough/video-placeholder/video-placeholder.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/gh/oskarrough/video-placeholder/video-placeholder.js"
+      async
+    ></script>
   </head>
-
   <body>
 
-      <div class="GridContent">
-          <!-- block1 -->
-          <div class="GridContent-item CoverBlock">
-    
-              <img class="GridContent-item-img" src="assets/jitwam-honeycomb-cover-front-ld.jpg" alt="Jitwam - Honeycomb">
-    
-          </div>
-          <!-- block2 -->
-          <div class="GridContent-item VideoBlock">
-        
-            <video-placeholder class="VideoBlock-videoElement">
-              <button class="VideoBlock-videoElement-button" is="video-placeholder-front">
-                  <img class="VideoBlock-videoElement-button-img" src="play_button.png" alt="Play">
-                  <img class="VideoBlock-videoElement-button-placeholder1 GridContent-item-img" src="assets/jitwam-honeycomb-cover-back_ld.jpg">
-                  <img class="VideoBlock-videoElement-button-placeholder2" src="assets/jitwam.jpg" alt="">
+		<img width="150" height="150" class="Spinner" src="assets/spinner.png" alt="" />
 
-              </button>
-              <template>
-                <iframe class="VideoBlock-videoElement-video" src="https://www.youtube.com/embed/Mh1Ilsd7cI4"></iframe>
-              </template>
-            </video-placeholder>
-    
-          </div>
+		<a href="#" class="PreorderLink">
+			<em>Pre-order</em> <br>ALBUM
+		</a>
 
-          <!-- block3 -->
-          <div class="GridContent-item DownloadBlock">
-    
-            <div class="DownloadBlock-downloadText"> Hit the vinyl to preorder the album </div>
-            <div class="DownloadBlock-downloadButtonContainer">
-              <img class="DownloadBlock-downloadButtonContainer-img" src="assets/download_button.svg" alt="broken">
-            </div>
-            <a href="https://www.google.com">
-              <img class="DownloadBlock-img GridContent-item-img" src="assets/Jitwam_HONEYCOMB_Mockup_Complete_Back.jpg" alt="broken">
-            </a>
-          </div>
+    <div class="GridContent">
+      <div class="GridContent-item VideoBlock">
+        <video-placeholder>
+          <button is="video-placeholder-front">
+            <img class="PlayButton" src="assets/play.svg" alt="Play" />
+            <img src="assets/video-screen4.jpg" alt="" />
+          </button>
+          <template>
+            <iframe
+              class="VideoBlock-videoElement-video"
+              src="https://www.youtube.com/embed/Mh1Ilsd7cI4?modestbranding=1&showinfo=0&autoplay=1"
+            ></iframe>
+          </template>
+        </video-placeholder>
+      </div>
 
-          <!-- block4 -->
-          <div class="GridContent-item SocialBlock">
-    
-            <a class="SocialBlock-link" href="http://tartelet-records.com">
-							<img class="SocialBlock-link-tarteletSVG" src="assets/tartelet-records-logo.svg" alt="Tartelet Records">
-              </svg>
-            </a>
-    
-            <a class="SocialBlock-link" href="https://soundcloud.com/jitwam">
-              <img class="SocialBlock-img FacebookIcon" src="assets/facebook_icon.svg" alt="Jitwam on Facebook">
-            </a>
-    
-            <a class="SocialBlock-link" href="https://fr-fr.facebook.com/jitwam/">
-              <img class="SocialBlock-img SoundcloudIcon" src="assets/soundcloud_icon.svg" alt="Jitwam on Soundcloud">
-            </a> 
-          </div>
+      <div class="GridContent-item">
+        <img
+          width="1500"
+          height="1500"
+          src="assets/jitwam-honeycomb-cover-front-ld-nologo.jpg"
+          alt=""
+        />
+        <img
+          class="BackVinyl"
+          width="1622"
+          height="859"
+          src="assets/Jitwam_HONEYCOMB_Mockup_Complete_Back-transparent.png"
+          alt=""
+        />
+      </div>
+      <div class="GridContent-item">
+        <img class="" src="assets/credits.jpg" alt="Credits" />
+      </div>
+    </div>
 
-          <!-- block5 -->
-          <div class="GridContent-item TrackListBlock">
+    <script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>
+    <script>
+      const {easing, tween, styler} = window.popmotion
+      const {spring, listen, pointer, value} = window.popmotion
+      var el = document.querySelector('.Spinner')
 
-            <img class="GridContent-item-tracklist" src="assets/jitwam-honeycomb-tracklistB-sd.jpg" alt="Vinyl artwork: Jitwam - Honeycomb backside">
+      const divStyler = styler(el)
 
-          </div>
-     
-        </div>
+      const t = tween({
+        from: 0,
+        to: {rotate: 180},
+        duration: 80000,
+        ease: easing.backOut,
+        flip: Infinity
+        // elapsed: 500,
+        // loop: 5,
+        // yoyo: 5
+      })
 
-    <script src="https://unpkg.com/hyperhtml@latest/min.js"></script>
-    <script src="custom_elements/video-placeholder.js"></script>
-    <script src="main.js"></script>
-    
+      t.start(divStyler.set)
+
+      const ballXY = value({x: 0, y: 0}, divStyler.set)
+
+      listen(el, 'mousedown touchstart').start(e => {
+        e.preventDefault()
+        pointer(ballXY.get()).start(ballXY)
+      })
+
+      listen(document, 'mouseup touchend').start(() => {
+        spring({
+          from: ballXY.get(),
+          velocity: ballXY.getVelocity(),
+          to: {x: 0, y: 0},
+          stiffness: 200
+          // mass: 1,
+          // damping: 10
+        }).start(ballXY)
+      })
+    </script>
+    <!-- <script src="main.js"></script> -->
   </body>
-
 </html>
-
