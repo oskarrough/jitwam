@@ -83,7 +83,7 @@ iframe {
 }
 
 .Spinner {
-  animation: 2s spinner;
+  animation: 2s spin;
   position: fixed;
   z-index: 3;
   top: 2rem;
