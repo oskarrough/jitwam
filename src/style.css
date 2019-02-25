@@ -82,16 +82,47 @@ iframe {
   opacity: 0.7;
 }
 
-.Spinner {
+.Spinner,
+.PreorderBlock-img,
+.PreorderBlock-text {
   position: fixed;
   z-index: 3;
   top: 2rem;
   left: 0vw;
   width: 18vw;
   height: 18vw;
+
+  cursor: pointer;
 }
 
-.PreorderLink {
+.PreorderBlock-img {
+
+  top:6.5rem;
+  left: 2vw;
+
+  width: 12.5vw;
+  height:12.5vw;
+
+
+}
+
+.PreorderBlock-text {
+
+
+  top: 9.8rem;
+  left: 2vw;
+
+  font-size:0.95rem;
+  text-decoration: none;
+  color:white;
+
+  width:20vw;
+  
+
+}
+
+
+/* .PreorderLink {
   display: inline-block;
   position: fixed;
   top: 15vh;
@@ -102,6 +133,5 @@ iframe {
   color: #08adf9;
   text-align: center;
   font-size: 2em;
-  /* writing-mode: vertical-rl;
-	text-orientation: mixed; */
-}
+
+} */
