@@ -24,20 +24,20 @@ body {
 }
 
 img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
   vertical-align: bottom;
 }
 
 .VideoBlock {
-	width: 95%;
+  width: 95%;
   margin: 15vh auto 6vh;
 }
 
 @media (min-width: 40em) {
-	.VideoBlock {
-		max-width: 65%;
-	}
+  .VideoBlock {
+    max-width: 65%;
+  }
 }
 
 .PlayButton {
@@ -83,7 +83,6 @@ iframe {
 }
 
 .Spinner {
-  animation: 2s spin;
   position: fixed;
   z-index: 3;
   top: 2rem;
@@ -92,24 +91,17 @@ iframe {
   height: 18vw;
 }
 
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .PreorderLink {
-  text-decoration: none;
- 
-  color: #08adf9;
-  padding: 1em;
   display: inline-block;
   position: fixed;
-  right: 1rem;
   top: 15vh;
+  right: 1rem;
+  z-index: 2;
+  padding: 1em;
+  text-decoration: none;
+  color: #08adf9;
   text-align: center;
-	font-size: 2em;
+  font-size: 2em;
   /* writing-mode: vertical-rl;
 	text-orientation: mixed; */
-	z-index: 2;
 }
