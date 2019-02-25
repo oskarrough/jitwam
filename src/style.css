@@ -102,6 +102,8 @@ iframe {
 
   cursor: pointer;
 
+  margin-top:14%;
+
 }
 
 .PreorderBlock {
@@ -123,8 +125,6 @@ iframe {
 
 .PreorderBlock-img {
 
-  /* width: 22%;
-  height:52%; */
 
   width:30%;
   height:55%;
@@ -188,6 +188,10 @@ iframe {
 
 @media (max-width: 770px) {
 
+  video-placeholder {
+    border:2px solid red;
+  }
+
 
 .FixedIconsBlock {
 
@@ -196,7 +200,7 @@ iframe {
 
   width: 60%;
 
-  margin-top:-12%;
+  margin-top:-21%;
 
   }
 
@@ -207,7 +211,7 @@ iframe {
 
     margin-left:0%;
 
-    margin-top:-5%;
+    margin-top:9%;
 
   }
 
