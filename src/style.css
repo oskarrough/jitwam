@@ -21,6 +21,7 @@ html {
 
 body {
   margin: 0;
+  color:white;
 }
 
 img {
@@ -82,7 +83,7 @@ iframe {
   opacity: 0.7;
 }
 
-.FixedIcons {
+.FixedIconsBlock {
 
   /* border:2px solid blue; */
 
@@ -96,7 +97,7 @@ iframe {
 
 }
 
-.FixedIcons * {
+.FixedIconsBlock * {
   /* border:2px solid yellow; */
 }
 
@@ -144,9 +145,43 @@ iframe {
 
 }
 
+
+.SocialIcons {
+
+  height:10vh;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+
+}
+
+.SocialBlock-link {
+ 
+    /* display: inline; */
+    height: 100%; 
+
+}
+
+.foo {
+
+  margin-top:-2em;
+
+}
+
+.SocialBlock-link-tarteletSVG,
+.FacebookIcon,
+.SoundcloudIcon {
+
+  height:100%;
+
+
+}
+
 @media (max-width: 770px) {
 
-.FixedIcons {
+.FixedIconsBlock {
 
   flex-direction: row;
   justify-content: start;
@@ -158,7 +193,7 @@ iframe {
 
   }
 
-  .FixedIcons > * {
+  .FixedIconsBlock > * {
     /* border:2px solid yellow; */
   }
 
