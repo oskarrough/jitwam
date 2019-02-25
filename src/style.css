@@ -144,7 +144,7 @@ iframe {
 
 }
 
-@media (max-width: 728px) {
+@media (max-width: 770px) {
 
 .FixedIcons {
 
@@ -179,10 +179,6 @@ iframe {
     margin-top:12%;
 
   }
-
-
-
-  
 
 
 }
