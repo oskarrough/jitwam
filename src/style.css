@@ -85,8 +85,6 @@ iframe {
 
 .FixedIconsBlock {
 
-  /* border:2px solid blue; */
-
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -95,10 +93,8 @@ iframe {
   max-height: 50vh;
   margin-top:-5%;
 
-}
+  margin-left:0.2em;
 
-.FixedIconsBlock * {
-  /* border:2px solid yellow; */
 }
 
 .Spinner {
@@ -141,14 +137,12 @@ iframe {
 
   margin-left:2%;
 
-  /* margin-left:0.5em; */
-
 }
 
 
 .SocialIcons {
 
-  height:10vh;
+  height:9vh;
 
   display: flex;
   justify-content: space-evenly;
@@ -159,8 +153,7 @@ iframe {
 
 .SocialBlock-link {
  
-    /* display: inline; */
-    height: 100%; 
+  height: 100%; 
 
 }
 
@@ -185,16 +178,11 @@ iframe {
 
   flex-direction: row;
   justify-content: start;
-  /* border:2px solid blue; */
 
   width: 60%;
 
   margin-top:-14%;
 
-  }
-
-  .FixedIconsBlock > * {
-    /* border:2px solid yellow; */
   }
 
   .PreorderBlock {
@@ -217,18 +205,3 @@ iframe {
 
 
 }
-
-
-/* .PreorderLink {
-  display: inline-block;
-  position: fixed;
-  top: 15vh;
-  right: 1rem;
-  z-index: 2;
-  padding: 1em;
-  text-decoration: none;
-  color: #08adf9;
-  text-align: center;
-  font-size: 2em;
-
-} */
