@@ -30,16 +30,29 @@ img {
   vertical-align: bottom;
 }
 
+/* FixedIconsBlock block */
+
+.FixedIconsBlock {
+
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  max-height: 50vh;
+  margin-top:-5%;
+
+  margin-left:0.2em;
+
+}
+
+/* VideoBlock  */
+
 .VideoBlock {
   width: 95%;
   margin: 15vh auto 6vh;
 }
 
-@media (min-width: 40em) {
-  .VideoBlock {
-    max-width: 65%;
-  }
-}
 
 .PlayButton {
   margin: auto;
@@ -70,6 +83,8 @@ iframe {
   border: 0;
 }
 
+/* BackVinyl block */
+
 .BackVinyl {
   display: block;
   max-width: 70%;
@@ -77,25 +92,7 @@ iframe {
   margin: 8vh auto;
 }
 
-.Text {
-  margin: 3vh auto;
-  max-width: 30em;
-  opacity: 0.7;
-}
-
-.FixedIconsBlock {
-
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  max-height: 50vh;
-  margin-top:-5%;
-
-  margin-left:0.2em;
-
-}
+/* jitwam and preoroder icons put horizontally */
 
 .Spinner {
 
@@ -157,11 +154,7 @@ iframe {
 
 }
 
-.foo {
-
-  margin-top:-2em;
-
-}
+/* social icons block */
 
 .SocialBlock-link-tarteletSVG,
 .FacebookIcon,
@@ -171,6 +164,20 @@ iframe {
 
 
 }
+
+/* make video takes more space */
+
+@media (min-width: 40em) {
+
+  .VideoBlock {
+
+    max-width: 65%;
+
+  }
+
+}
+
+/* jitwam and preoroder icons put vertically */
 
 @media (max-width: 770px) {
 
@@ -202,6 +209,5 @@ iframe {
     margin-top:12%;
 
   }
-
 
 }
