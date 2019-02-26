@@ -90,7 +90,7 @@ iframe {
   display: block;
   max-width: 70%;
   height: auto;
-  margin: 8vh auto;
+  margin: 10vh auto;
 }
 
 /* jitwam and preoroder icons put vertically */
@@ -143,33 +143,18 @@ iframe {
 
 
 .SocialIcons {
-
-  height:9vh;
-
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   align-content: center;
-
-  margin-top:-1em;
+  margin-bottom: 3rem;
 
 }
 
 .SocialBlock-link {
- 
-  height: 100%; 
-
-}
-
-/* social icons block */
-
-.SocialBlock-link-tarteletSVG,
-.FacebookIcon,
-.SoundcloudIcon {
-
-  height:100%;
-
-
+	width: 2.5em;
+	height: 2.5em;
+	object-fit: cover;
 }
 
 /* make video takes more space */
