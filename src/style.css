@@ -119,6 +119,8 @@ iframe {
   align-content: center;
   margin-bottom: 3rem;
 
+  border:2px solid red;
+
 }
 
 .SocialBlock-link {
@@ -144,6 +146,5 @@ iframe {
 @media (max-width: 770px) {
 	.FixedIconsBlock {
 		top: 0;
-		/* margin-top:-21%; */
 	}
 }
