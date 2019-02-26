@@ -35,13 +35,12 @@ img {
 .FixedIconsBlock {
 
   position: fixed;
+	z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  max-height: 50vh;
+  /* max-height: 50vh; */
   margin-top:-5%;
-
   margin-left:0.2em;
 
 }
