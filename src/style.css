@@ -36,14 +36,32 @@ img {
 
   position: fixed;
 	z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* max-height: 50vh; */
-  margin-top:-5%;
-  margin-left:0.2em;
+  top: 5%;
+  left: 1vw;
 
+	text-align: center;
 }
+
+.Spinner {
+  cursor: pointer;
+	width: calc(4rem + 2vw);
+	height: calc(4rem + 2vw);
+}
+
+.PreorderBlock {
+	display: block;
+  text-decoration: none;
+  font-size:90%;
+  color:white;
+	text-shadow: 1px 1px 0 black;
+	line-height: 1.2;
+}
+
+.PreorderBlock:hover {
+  text-decoration: underline;
+}
+
+
 
 /* VideoBlock  */
 
@@ -94,53 +112,6 @@ iframe {
 
 /* jitwam and preoroder icons put vertically */
 
-.Spinner {
-
-  width: 30%;
-  height: 30%;
-
-  cursor: pointer;
-
-  margin-top:14%;
-
-}
-
-.PreorderBlock {
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: left;
-
-  margin-top:-2%;
-
-  width:100%;
-  height: 50%;
-
-  text-decoration: none;
-  
-}
-
-.PreorderBlock-img {
-
-
-  width:30%;
-  height:55%;
-
-}
-
-.PreorderBlock-text {
-
-  font-size:90%;
-  text-decoration: none;
-  color:white;
-
-  margin-left:4%;
-
-}
-
-
 .SocialIcons {
   display: flex;
   justify-content: space-evenly;
@@ -171,41 +142,8 @@ iframe {
 /* jitwam and preoroder icons put horizontally */
 
 @media (max-width: 770px) {
-
-
-.FixedIconsBlock {
-
-  flex-direction: row;
-  justify-content: start;
-
-  width: 60%;
-
-  margin-top:-21%;
-
-  }
-
-  .PreorderBlock {
-
-    flex-direction: row;
-    justify-content: flex-start;
-
-    margin-left:0%;
-
-    margin-top:9%;
-
-  }
-
-  .PreorderBlock-img {
-
-    margin-top:5%;
-
-  }
-
-  .PreorderBlock-text {
-
-    margin-top:12%;
-  
-
-  }
-
+	.FixedIconsBlock {
+		top: 0;
+		/* margin-top:-21%; */
+	}
 }
