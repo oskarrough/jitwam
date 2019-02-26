@@ -1,5 +1,3 @@
-console.log("Here");
-
 const {easing, tween, styler} = window.popmotion
 const {spring, listen, pointer, value} = window.popmotion
 const el = document.querySelector('.Spinner')
