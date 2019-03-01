@@ -21,7 +21,7 @@ html {
 
 body {
   margin: 0;
-  color:white;
+  color: white;
 }
 
 img {
@@ -33,43 +33,45 @@ img {
 /* FixedIconsBlock block */
 
 .FixedIconsBlock {
-
   position: fixed;
-	z-index: 2;
+  z-index: 2;
   top: 5%;
   left: 1vw;
 
-	text-align: center;
+  text-align: center;
 }
 
 .Spinner {
   cursor: pointer;
-	width: calc(4rem + 2vw);
-	height: calc(4rem + 2vw);
+  width: calc(4rem + 2vw);
+  height: calc(4rem + 2vw);
 }
 
 .PreorderBlock {
-	display: block;
+  display: block;
   text-decoration: none;
-  font-size:90%;
-  color:white;
-	text-shadow: 1px 1px 0 black;
-	line-height: 1.2;
+  font-size: 90%;
+  color: white;
+  text-shadow: 1px 1px 0 black;
+  line-height: 1.2;
 }
 
 .PreorderBlock:hover {
   text-decoration: underline;
 }
 
-
-
 /* VideoBlock  */
 
 .VideoBlock {
   width: 95%;
-  margin: 15vh auto 6vh;
+  margin: 7vh auto 0vh;
 }
 
+@media (min-width: 40em) {
+  .VideoBlock {
+    max-width: 75%;
+  }
+}
 
 .PlayButton {
   margin: auto;
@@ -86,7 +88,6 @@ img {
 
 video-placeholder {
   background: #222;
-
 }
 
 [is='video-placeholder-front']:hover {
@@ -121,27 +122,15 @@ iframe {
 }
 
 .SocialBlock-link {
-	width: 2.5em;
-	height: 2.5em;
-	object-fit: cover;
-}
-
-/* make video takes more space */
-
-@media (min-width: 40em) {
-
-  .VideoBlock {
-
-    max-width: 65%;
-
-  }
-
+  width: 2.5em;
+  height: 2.5em;
+  object-fit: cover;
 }
 
 /* jitwam and preoroder icons put horizontally */
 
 @media (max-width: 770px) {
-	.FixedIconsBlock {
-		top: 0;
-	}
+  .FixedIconsBlock {
+    top: 0;
+  }
 }
