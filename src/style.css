@@ -30,14 +30,16 @@ img {
   vertical-align: bottom;
 }
 
-/* FixedIconsBlock block */
+a:link,
+a:visited {
+  color: white;
+}
 
 .FixedIconsBlock {
   position: fixed;
   z-index: 2;
   top: 5%;
   left: 1vw;
-
   text-align: center;
 }
 
@@ -51,7 +53,6 @@ img {
   display: block;
   text-decoration: none;
   font-size: 90%;
-  color: white;
   text-shadow: 1px 1px 0 black;
   line-height: 1.2;
 }
@@ -59,8 +60,6 @@ img {
 .PreorderBlock:hover {
   text-decoration: underline;
 }
-
-/* VideoBlock  */
 
 .VideoBlock {
   width: 95%;
@@ -102,16 +101,12 @@ iframe {
   border: 0;
 }
 
-/* BackVinyl block */
-
 .BackVinyl {
   display: block;
   max-width: 70%;
   height: auto;
   margin: 10vh auto;
 }
-
-/* jitwam and preoroder icons put vertically */
 
 .SocialIcons {
   display: flex;
@@ -133,4 +128,17 @@ iframe {
   .FixedIconsBlock {
     top: 0;
   }
+}
+
+.Gallery {
+  min-height: 50vh;
+  margin: 3rem 0;
+}
+
+.Gallery img {
+  width: 66%;
+  margin-right: 2rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: block;
 }
