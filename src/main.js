@@ -10,14 +10,16 @@ const t = tween({
   ease: easing.backOut,
   flip: Infinity,
   // elapsed: 500,
-  loop: 5,
+  loop: 5
   // yoyo: 5
 })
 t.start(divStyler.set)
+
 listen(el, 'mousedown touchstart').start(e => {
   e.preventDefault()
   pointer(ballXY.get()).start(ballXY)
 })
+
 listen(document, 'mouseup touchend').start(() => {
   spring({
     from: ballXY.get(),
