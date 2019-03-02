@@ -6,19 +6,15 @@
 
 html {
   font-family: Bodoni* 11, Bodoni, serif;
-  font-size: calc(10px + 1.2vw);
+  font-size: calc(15px + 0.4vw);
   line-height: 1.4;
   background: black;
   color: white;
+	color: hsl(0, 0%, 90%);
 }
 
 body {
   margin: 0;
-  color: white;
-}
-
-p {
-	font-size: 0.75rem;
 }
 
 img {
@@ -34,15 +30,14 @@ a:visited {
 
 .Header {
 	margin-top: 1rem;
-	/* margin-left: 6vw; */
-	/* text-align: right; */
+	margin-bottom: 1rem;
 }
 
 .Header img {
 	max-width: 30%;
 }
 
-.FixedIconsBlock {
+.PreorderBlock {
 	float: right;
   position: sticky;
   z-index: 2;
@@ -52,21 +47,34 @@ a:visited {
   text-align: center;
 }
 
-.Spinner {
-  cursor: pointer;
-  width: calc(4rem + 2vw);
-  height: calc(4rem + 2vw);
+@media (max-width: 40em) {
+	.PreorderBlock {
+		position: absolute;
+		margin-top: 0;
+	}
 }
 
-.PreorderBlock {
+.Spinner {
+  width: calc(4rem + 2vw);
+  height: calc(4rem + 2vw);
+	animation: spinner 40s infinite;
+  cursor: grab;
+}
+
+@keyframes spinner {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.PreorderBlock a {
   display: block;
   text-decoration: none;
-  font-size: 80%;
   text-shadow: 1px 1px 0 black;
   line-height: 1.2;
 }
 
-.PreorderBlock:hover {
+.PreorderBlock a:hover {
   text-decoration: underline;
 }
 
@@ -110,33 +118,18 @@ iframe {
   border: 0;
 }
 
-.BackVinyl {
-  display: block;
-  max-width: 70%;
-  height: auto;
-  margin: 10vh auto;
-}
-
 .SocialIcons {
+	max-width: 20rem;
+	margin: 0 auto 3rem;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  align-content: center;
-  margin-bottom: 3rem;
 }
 
 .SocialBlock-link {
   width: 2.5em;
   height: 2.5em;
   object-fit: cover;
-}
-
-/* jitwam and preoroder icons put horizontally */
-
-@media (max-width: 770px) {
-  .FixedIconsBlock {
-    top: 0;
-  }
+	opacity: 0.7;
 }
 
 .Gallery {
