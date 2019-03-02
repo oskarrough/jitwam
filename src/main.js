@@ -6,17 +6,17 @@ const divStyler = styler(el)
 const ballXY = value({x: 0, y: 0}, divStyler.set)
 
 // Rotate it 10 times
-const t = tween({
-  from: 0,
-  to: {rotate: 180},
-  duration: 80000,
-  ease: easing.backOut,
-  flip: Infinity,
-  // elapsed: 500,
-  loop: 10
-  // yoyo: 5
-})
-t.start(divStyler.set)
+// const t = tween({
+//   from: 0,
+//   to: {rotate: 180},
+//   duration: 80000,
+//   ease: easing.backOut,
+//   flip: Infinity,
+//   // elapsed: 500,
+//   loop: 10
+//   // yoyo: 5
+// })
+// t.start(divStyler.set)
 
 // Drag and drop effect.
 listen(el, 'mousedown touchstart').start(e => {
