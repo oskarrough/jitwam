@@ -36,23 +36,35 @@ listen(document, 'mouseup touchend').start(() => {
 
 // Create a flickity gallery from each .Gallery element.
 var galleries = document.querySelectorAll('.Gallery')
-galleries.forEach(el => new Flickity(el, {
-  imagesLoaded: true,
-  lazyLoad: 2 // loads next and previous X slides
-}))
+galleries.forEach(
+  el =>
+    new Flickity(el, {
+      imagesLoaded: true,
+      lazyLoad: 2 // loads next and previous X slides
+    })
+)
 
-			;(function(doc, win) {
-				var screenWidth = win.screen.width / 2
-				var screenHeight = win.screen.height / 2
-				var el = doc.querySelector('.TitleImage')
+;(function(doc, win) {
+  var screenWidth = win.screen.width / 2
+  var screenHeight = win.screen.height / 2
+  var el = doc.querySelector('.TitleImage')
 
-				doc.addEventListener('mousemove', function(e) {
-					var centroX = e.clientX - screenWidth
-					var centroY = screenHeight - e.clientY
-					var degX = centroX * 0.01
-					var degY = centroY * 0.02
-					// Set rotation
-					el.style['transform'] =
-						'scale(1.2) perspective(2000px)' + 'rotateY(' + degX + 'deg)  rotateX(' + degY + 'deg)'
-				})
-			})(document, window)
+  doc.addEventListener('mousemove', function(e) {
+    var centroX = e.clientX - screenWidth
+    var centroY = screenHeight - e.clientY
+    var degX = centroX * 0.01
+    var degY = centroY * 0.02
+    // Set rotation
+    el.style['transform'] =
+      'scale(1.2) perspective(2000px)' + 'rotateY(' + degX + 'deg)  rotateX(' + degY + 'deg)'
+  })
+})(document, window)
+
+function ImageFlip(el) {
+	function handleClick() {
+		el.classList.toggle('is-flipped')
+	}
+	el.addEventListener('click', handleClick)
+}
+
+const flip = new ImageFlip(document.querySelector('.ImageFlip'))
