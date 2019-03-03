@@ -28,15 +28,6 @@ a:visited {
   color: white;
 }
 
-.Header {
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-}
-
-.Header img {
-	max-width: 30%;
-}
-
 .PreorderBlock {
 	float: right;
   position: sticky;
@@ -79,13 +70,12 @@ a:visited {
 }
 
 .VideoBlock {
-  width: 95%;
-  margin: 0vh auto 0vh;
+  width: 90%;
+  margin: 8vh auto 0vh;
 }
 
 @media (min-width: 40em) {
   .VideoBlock {
-    max-width: 62%;
   }
 }
 
@@ -102,6 +92,18 @@ a:visited {
   transition: opacity 200ms;
 }
 
+video-placeholder img:not(:first-child) {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.TitleImage {
+	mix-blend-mode: darken;
+	opacity: 0.7;
+	transition: opacity 200ms;
+}
+
 video-placeholder {
   background: #222;
 }
@@ -114,8 +116,18 @@ video-placeholder {
   opacity: 1;
 }
 
+[is='video-placeholder-front']:hover .TitleImage {
+	opacity: 0.3;
+}
+
 iframe {
   border: 0;
+}
+
+.TextContainer {
+	max-width: 37em;
+	margin: 4rem auto;
+	text-align: center;
 }
 
 .SocialIcons {
