@@ -5,7 +5,7 @@
 }
 
 html {
-  font-family: Bodoni * 11, Bodoni, serif;
+  font-family: 'Bodoni 16', Bodoni, serif;
   font-size: calc(15px + 0.2vw);
   line-height: 1.4;
   background: black;
