@@ -62,7 +62,7 @@ a:visited {
   text-decoration: none;
   text-shadow: 1px 1px 0 black;
   line-height: 1.2;
-	font-size: larger;
+  font-size: larger;
 }
 
 .PreorderBlock a:hover {
@@ -126,8 +126,8 @@ iframe {
 }
 
 .TextContainer {
-	text-indent: 1em;
-	margin: 3rem 0;
+  text-indent: 1em;
+  margin: 3rem 0;
   max-width: 37em;
   /* text-align: center; */
 }
@@ -209,4 +209,13 @@ iframe {
     gap: 3vw;
     place-items: center;
   }
+}
+
+.visually-hidden {
+  /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
 }
