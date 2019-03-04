@@ -45,8 +45,8 @@ a:visited {
 }
 
 .Spinner {
-  width: calc(4rem + 2vw);
-  height: calc(4rem + 2vw);
+  width: calc(4rem + 3vw);
+  height: calc(4rem + 3vw);
   animation: spinner 40s infinite;
   cursor: grab;
 }
@@ -62,6 +62,7 @@ a:visited {
   text-decoration: none;
   text-shadow: 1px 1px 0 black;
   line-height: 1.2;
+	font-size: larger;
 }
 
 .PreorderBlock a:hover {
