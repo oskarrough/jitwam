@@ -6,7 +6,7 @@
 
 html {
   font-family: Bodoni * 11, Bodoni, serif;
-  font-size: calc(15px + 0.4vw);
+  font-size: calc(15px + 0.2vw);
   line-height: 1.4;
   background: black;
   color: hsl(0, 0%, 80%);
@@ -125,9 +125,10 @@ iframe {
 }
 
 .TextContainer {
+	text-indent: 1em;
 	margin: 3rem 0;
   max-width: 37em;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .SocialIcons {
