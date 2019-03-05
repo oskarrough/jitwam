@@ -31,8 +31,7 @@ a:visited {
   float: right;
   position: sticky;
   z-index: 2;
-  margin-top: 40vh;
-  top: 1rem;
+  top: 2vh;
   right: 2vw;
   text-align: center;
 }
@@ -40,7 +39,6 @@ a:visited {
 @media (max-width: 40em) {
   .PreorderBlock {
     position: absolute;
-    margin-top: 0;
   }
 }
 
@@ -126,10 +124,8 @@ iframe {
 }
 
 .TextContainer {
-  text-indent: 1em;
   margin: 3rem 0;
   max-width: 37em;
-  /* text-align: center; */
 }
 
 .SocialIcons {
@@ -144,6 +140,11 @@ iframe {
   height: 2.5em;
   object-fit: cover;
   opacity: 0.7;
+}
+
+.FacebookIcon {
+	width: 2.3em;
+	height: 2.3em;
 }
 
 .Gallery {
@@ -198,8 +199,13 @@ iframe {
   margin: 3rem 1rem;
 }
 
+.TextContainer {
+  flex: 1;
+}
+
 .ImageFlip {
-  max-width: 70%;
+	flex: 2;
+  /* max-width: 70%; */
 }
 
 @media (min-width: 1200px) {
@@ -218,4 +224,8 @@ iframe {
   width: 1px;
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
+}
+
+button.flickity-button {
+	background: none;
 }
