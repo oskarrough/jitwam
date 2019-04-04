@@ -96,6 +96,17 @@ video-placeholder img:not(:first-child) {
   left: 0;
 }
 
+/* Until the video gets released... */
+
+video-placeholder[disabled] {
+	pointer-events: none;
+}
+
+video-placeholder[disabled] .PlayButton {
+	display: none;
+}
+
+
 .TitleImage {
   mix-blend-mode: darken;
   opacity: 0.7;
