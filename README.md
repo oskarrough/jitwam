@@ -1,5 +1,3 @@
-# jitwam
+Website for Jitwam at https://www.jitwam.com. 
 
-webpage displaying jitwam promo video 
-
-https://jitwam.netlify.com
+Master branch deploys automatically via Netlify.
